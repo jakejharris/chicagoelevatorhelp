@@ -1,21 +1,34 @@
 export function Hero() {
   return (
-    <section className="bg-white px-4 pb-16 pt-12 md:pb-24 md:pt-20">
-      <div className="mx-auto max-w-3xl text-center">
-        <h1 className="text-3xl font-bold leading-tight tracking-tight text-foreground md:text-5xl md:leading-tight">
-          Your building&apos;s elevator is broken.
-          <br />
-          <span className="text-accent">Here&apos;s what the law says.</span>
-        </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted">
-          A free resource for Chicago tenants experiencing prolonged elevator
-          outages. Learn your rights under the Chicago Residential Landlord and
-          Tenant Ordinance (RLTO) and take action.
+    <section className="bg-white px-4 pb-20 pt-16 md:pb-32 md:pt-28">
+      <div className="mx-auto max-w-4xl text-center">
+        {/* Eyebrow */}
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+          Chicago Tenant Rights
         </p>
-        <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+
+        {/* Headline — serif display, oversized */}
+        <h1 className="mt-5 font-display text-[2rem] leading-[1.1] tracking-tight text-foreground [text-wrap:balance] sm:text-5xl md:text-6xl lg:text-7xl">
+          Your elevator is broken.
+          <br className="hidden sm:block" />
+          <span className="text-accent"> The law is on your side.</span>
+        </h1>
+
+        {/* Divider accent */}
+        <div className="mx-auto mt-8 h-px w-16 bg-accent/40" />
+
+        {/* Subtitle — sans-serif, lighter weight, generous measure */}
+        <p className="mx-auto mt-8 max-w-xl text-base leading-relaxed text-muted md:text-lg md:leading-relaxed">
+          A free resource for Chicago tenants experiencing prolonged elevator
+          outages. Know your rights under the RLTO. Send a formal notice in
+          under two minutes.
+        </p>
+
+        {/* CTAs */}
+        <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
           <a
             href="#template"
-            className="inline-flex h-12 items-center justify-center rounded-lg bg-accent px-8 text-base font-semibold text-white transition-colors hover:bg-accent-dark"
+            className="inline-flex h-12 items-center justify-center rounded-lg bg-accent px-8 text-base font-semibold text-white shadow-sm transition-colors hover:bg-accent-dark"
           >
             Use the Email Template
           </a>

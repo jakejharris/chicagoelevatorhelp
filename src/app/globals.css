@@ -21,6 +21,7 @@
   --color-border: var(--border);
   --color-card-bg: var(--card-bg);
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-dm-serif), Georgia, "Times New Roman", serif;
 }
 
 body {
